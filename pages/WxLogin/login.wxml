@@ -1,3 +1,4 @@
 <!--pages/WxLogin/login.wxml-->
 <text>pages/WxLogin/login.wxml</text>
 <view><button class="registerBtn" type="primary"  open-type="getUserInfo" bindgetuserinfo="doLogin">微信登录</button></view>
+<view><button class="getUserInfoBtn" type="warm"  open-type="getUserInfo" bindgetuserinfo="doLogin">微信登录</button></view>

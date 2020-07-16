@@ -15,9 +15,11 @@ Page({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'http://localhost:8080/getCode',
+            method: 'POST',
+            url: 'http://localhost:8080/wxLogin',
             data: {
-              code: res.code
+              code: res.code,
+              userInfo: e.detail.userInfo
             }
           })
         } else {
